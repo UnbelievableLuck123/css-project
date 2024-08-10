@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/modern-normalize.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/components/header.css">
+    <link rel="stylesheet" href="./styles/components/aboutme.css">
+    <link rel="stylesheet" href="./styles/components/projects.css">
+    <link rel="stylesheet" href="./styles/components/contact.css">
+    <link rel="stylesheet" href="./styles/components/footer.css">
+    <link rel="stylesheet" href="./styles/utility.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <title>My Capstone Project 2</title>
+</head>
+<body>
+    <header class="header container">
+        <div class="header__title-container">
+            <img class="header__logo" src="./public/me.png" alt="guy with eyeglass" width="720" height="972" />
+            <span class="header__title">My Capstone Project</span>
+        </div>
+        <button class="header__bars" aria-label="menu button">
+            <svg
+            aria-hidden="true" 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24" fill="currentColor" 
+            class="size-6">
+                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+              </svg>
+        </button>
+         <nav class="header__menu">
+            <div class="header__social-container">
+                <a
+                href="https.github.com" 
+                target="_blank" 
+                rel="noreferrer noopener"
+                class="header__social"
+                title="github"
+                aria-label="github link">
+                    <i aria-hidden="true" class="lni lni-github-original"></i>
+                </a>
+                <a
+                href="https.discord.com" 
+                target="_blank" 
+                rel="noreferrer noopener"
+                class="header__social"
+                title="discord"
+                aria-label="discord link">
+                    <i aria-hidden="true" class="lni lni-discord-alt"></i>
+                </a>
+                <a
+                href="https.youtube.com" 
+                target="_blank" 
+                rel="noreferrer noopener"
+                class="header__social"
+                title="youtube"
+                aria-label="youtube link">
+                <i aria-hidden="true" class="lni lni-youtube"></i>
+                </a>
+            </div>
+            <div class="header__separator"></div>
+            <a href="#about-me-section" class="header__about-me-btn">About Me</a>
+            <a href="#" class="header__resume btn">Resume <svg 
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 24 24" 
+                fill="currentColor" 
+                class="header__arrow">
+                <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+              </svg>
+              </a>
+         </nav>     
+    </header>
+    <main>
+        <!-- About Me -->
+        <section class="about-me container section">
+            <img
+                id="about-me-section"
+                class="about-me__img" 
+                src="./public/Ricky Boy.jpg" 
+                alt="picture of ricky boy"
+                width="1496"
+                height="1553"
+            />
+            <h1 class="about-me__title">About Me</h1>
+            <p class="about-me__description">I am a junior web developer with skills in <strong>HTML</strong>, 
+                <strong>CSS</strong>, <strong>JavaScript</strong> and 
+                <strong>Python</strong>. I enjoy creating dynamic and responsive web applications and 
+                continually seek to <br> expand my knowledge and expertise <br>in <strong>web development.</strong>                                            
+            </p>        
+        </section>
+        <!-- Projects -->
+        <section class="projects container section">
+            <h2 class="title">Projects</h2>
+            <div class="projects__box-container">
+                <div class="projects__box project__box-0margin projects__box-css">
+                    <div>
+                        <h3 class="projects__title">CSS</h3>
+                        <p class="projects__description1">Cascading Stylesheet</p>
+                    </div>
+                    <div>
+                        <p class="projects__description2">CSS (Cascading Style Sheets) is a stylesheet 
+                            language responsible for the styling of your web page. It is used to express 
+                            how HTML elements are styled, positioned and rendered on all of the different 
+                            screen display and sizes.
+                        </p>
+                        <a href="./previous-project/11.3 TinDog Project/index.html" 
+                            class="projects__btn btn"
+                            target="_blank">View Project
+                        </a>
+                    </div>
+                </div>
+                <div class="projects__box projects__box-js">
+                    <div>
+                        <h3 class="projects__title">JavaScript</h3>
+                        <p class="projects__description1">The JavaScript</p>
+                    </div>
+                    <div>
+                        <p class="projects__description2">JS (JavaScript) is one of the most widely 
+                            used programming languages in the world. It allows us to add interactivity 
+                            to our web pages.
+                        </p>
+                        <button class="projects__btn btn">View Project</button>
+                    </div>
+                </div>
+                <div class="projects__box projects__box-htm">
+                    <div>
+                        <h3 class="projects__title">HTML</h3>
+                        <p class="projects__description1">HyperText Markup Language</p>
+                    </div>
+                    <div>
+                        <p class="projects__description2">HTML (HyperText Markup Language) is 
+                            the standard markup language for creating web pages. It provides the 
+                            basic structure of a web page, which is then enhanced and modified by other 
+                            technologies such as CSS and JavaScript.
+                        </p>
+                        <a href="./project-html/index.html" target="_blank" class="projects__btn  btn">View Project</a>
+                    </div>
+                </div>
+                <div class="projects__box projects__box-pyt">
+                    <div>
+                        <h3 class="projects__title">PYTHON</h3>
+                        <p class="projects__description1">High-Level Programming Language</p>
+                    </div>
+                    <div>
+                        <p class="projects__description2">Python is a high-level, interpreted programming language 
+                            known for its easy-to-read syntax and versatility. It is widely used for web development, 
+                            data analysis, artificial intelligence, and scientific computing.
+                        </p>
+                        <button class="projects__btn btn">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="contact container section">
+                <h2 class="title">Contact</h2>
+                <div class="contact__box">
+                    <a href="https://www.linkedin.com" 
+                        target="_blank" 
+                        class="contact__link"
+                        rel="noopener noreferrer"
+                        >Linkedin</a>
+                    <a href="https://www.facebook.com" 
+                        target="_blank" 
+                        class="contact__link"
+                        rel="noopener noreferrer"
+                        >Facebook</a>
+                    <a href="https://mail.google.com" 
+                        target="_blank" 
+                        class="contact__link"
+                        rel="noopener noreferrer"
+                        >Gmail</a>
+                </div>
+        </section>
+    </main>
+    <!-- Footer.. -->
+    <footer class="footer container section">
+        <p class="footer__title">~@Ricky 2024~</p>
+    </footer>
+</body>
+</html>

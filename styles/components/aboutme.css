@@ -1,0 +1,92 @@
+.about-me {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.about-me > * + * {
+    margin-top: 0.5rem;
+}
+
+.about-me__img {
+    width: var(--size-9xl);
+    height: var(--size-9xl);
+    border-radius: 50%;
+    margin-inline: auto;
+}
+
+.about-me__description {
+    font-family: var(--font-secondary);
+}
+
+/* MOBILE FIRST */
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+    .about-me__img {
+        width: var(--size-10xl);
+        height: var(--size-10xl);
+    }
+    .about-me__title {
+        font-size: var(--size-4xl);
+        font-weight: 700;
+    }
+    .about-me__description {
+        font-size: var(--size-lg);
+        max-width: 50ch;
+        margin-inline: auto;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .about-me__img {
+        width: 11rem;
+        height: 11rem;
+    }
+    .about-me__title {
+        font-size: var(--size-4xl);
+        font-weight: 700;
+    }
+    .about-me__description {
+        font-size: var(--size-xl);
+        max-width: 50ch;
+        margin-inline: auto;
+    }
+
+    .about-me > * + * {
+        margin-top: 1rem;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .about-me__img {
+        width: 11rem;
+        height: 11rem;
+    }
+    .about-me__title {
+        font-size: var(--size-5xl);
+        font-weight: 700;
+    }
+    br {
+        display: none;
+    }
+    .about-me__description {
+        font-size: var(--size-xl);
+        max-width: 64ch;
+        margin-inline: auto;
+    }
+
+    .about-me > * + * {
+        margin-top: 1rem;
+    }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
